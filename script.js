@@ -3,6 +3,7 @@ const passengers = document.querySelector(".passengers");
 const increment = document.querySelector(".increment");
 const save = document.querySelector(".save");
 const entries = document.querySelector(".entries");
+const reset = document.querySelector(".reset");
 
 let count = 0;
 let previousEntries = [];
@@ -21,4 +22,10 @@ save.addEventListener("click", () => {
   const renderedEntries = previousEntries.join("-");
 
   entries.textContent = renderedEntries;
+});
+
+reset.addEventListener("click", () => {
+  count = 0;
+  previousEntries = [];
+  entries.textContent = 0;
 });
