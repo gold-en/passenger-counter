@@ -5,9 +5,15 @@
 }
 
 .container {
-  background-color: aqua;
+  /* background-color: aqua; */
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(126, 213, 111, 0.8),
+    rgba(40, 180, 131, 0.8)
+  );
   width: 500px;
   margin: 10px auto;
+  border-radius: 10px;
 }
 
 .header {
@@ -49,4 +55,13 @@ button {
 
 .previous-entries {
   padding: 20px;
+}
+
+.entered {
+  display: inline-block;
+  padding: 5px;
+  margin: 4px;
+  background-color: rgb(187, 136, 236);
+  color: white;
+  border-radius: 5px;
 }

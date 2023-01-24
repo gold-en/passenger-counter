@@ -19,9 +19,13 @@ save.addEventListener("click", () => {
   previousEntries = [...previousEntries, count];
   count = 0;
 
-  const renderedEntries = previousEntries.join("-");
+  // const renderedEntries = previousEntries.join("-");
 
-  entries.textContent = renderedEntries;
+  const renderedEntries = previousEntries
+    .map((entry) => `<span class='entered'>${entry}</span>`)
+    .join("");
+
+  entries.innerHTML = renderedEntries;
 });
 
 reset.addEventListener("click", () => {
