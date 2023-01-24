@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: aqua;
+  width: 500px;
+  margin: 10px auto;
+}
+
+h1 {
+  padding: 20px;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.previous-entries {
+  padding: 20px;
+}
